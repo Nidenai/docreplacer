@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "docreplacer"
+version = "0.1.0"
+description = ""
+authors = ["Dmitriy Knyazev <dimsknz@gmail.com>"]
+packages = [
+  { include = "doc_replacer" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^1.1.2"
+celery = "^5.0.5"
+prompt = "^0.4.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+docreplacer = "doc_replacer.scripts.docreplacer:main"

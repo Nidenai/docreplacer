@@ -1,0 +1,2 @@
+docreplacer:
+	poetry run docreplacer
